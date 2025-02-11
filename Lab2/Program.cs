@@ -77,12 +77,13 @@ public class Program
                     }
                     else
                     {
-                        arrayVector = createArrayVector(Convert.ToInt32(len+1));
+                        arrayVector = createArrayVector(Convert.ToInt32(len)+1);
                     }
                     break;
                 case "2":
                     Console.WriteLine("Введите индекс: ");
                     int ind = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(ind);
                     Console.WriteLine(arrayVector.print());
                     Console.WriteLine(arrayVector[ind]);
                     break;
